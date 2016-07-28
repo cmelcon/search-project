@@ -10,7 +10,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "shit": "budo js/app.js:js/prod.js --live"
+    "shit": "budo js/app.js:js/prod.js --live",
+    "bundle": "browserify js/app.js -t [babelify --presets [es2015]] | uglifyjs > js/prod.js"
   },
   "repository": {
     "type": "git",
