@@ -1,7 +1,5 @@
 const $ = require('jquery');
-var x = ""
-/*$(".img").css("height", window.innerHeight + "px");*/
-/*$(document).on("click", getResults());*/
+$("#bt").on("click", getResults);
 $(document).on("keypress", function(a){
 	console.log(a);
 	if (a.keyCode === 13){
